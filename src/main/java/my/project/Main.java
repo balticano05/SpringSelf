@@ -1,7 +1,12 @@
 package my.project;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("my.project");
+        context.close();
     }
+
 }
